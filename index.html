@@ -1,52 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contigo pan y cebolla</title>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Contigo pan y cebolla</title>
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <!--Contenido de la página-->
+		<style type="text/css">
+			#menu-lateral{
+				padding-left: 10%;
+				padding-top: 34px;
+				padding-bottom: 34px;
+				padding-right: 10%;
+				padding-bottom: 53%;			}
 
-    <div id="izq" class ="container-fluid col-xs-3 panel panel-default row">
-      <button type="button" class="btn btn-default btn-lg" style="width:80%">Coffe Breaks</button>
-      <p></p>
-      <button type="button" class="btn btn-default btn-lg" style="width:80%">Catering</button>
-      <p></p>
-      <button type="button" class="btn btn-default btn-lg" style="width:80%">Cenas</button>
-      <p></p>
-      <button type="button" class="btn btn-default btn-lg" style="width:80%">Cumpleaños</button>
-      <p></p>
-      <button type="button" class="btn btn-default btn-lg" style="width:80%">Matrimonios</button>
-      <p></p>
-    </div>
-    <div id="centro" class ="container-fluid col-xs-6 panel panel-default row">
-      <div id ="menu" class="btn-group btn-group-justified btn-group-lg">
-        <div class="btn-group">
-          <button type="button" class="btn btn-default">Nuestros Productos</button>
-        </div>
-        <div class="btn-group">
-          <button type="button" class="btn btn-default">Cotiza con Nosotros</button>
-        </div>
-        <div class="btn-group">
-          <button type="button" class="btn btn-default">Contáctenos</button>
-        </div>
-      </div>
-      <h1> hola</h1>
-      <h1> hola</h1>
-      <h1> hola</h1>
-      <h1> hola</h1>
-    </div>
-    <div id="der" class ="container-fluid col-xs-3 panel panel-default row">
-      
-    </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+			.btn-lat{
+				width: 100%;
+			}
+
+			#contenido{
+				padding-left: 7%;
+				padding-right: 7%;
+				padding-top: 0px;
+				padding-bottom: 34px;
+			}
+
+			.imgPag{
+				width: 100%;
+
+			}
+
+			.info1{
+				width: 100%;
+				padding: 0;
+				margin: 0;
+			}
+		</style>
+
+	</head>
+	<body>
+
+		<div id="header" class="row">
+			<div id="banner-izq" class="col-xs-3"></div>
+			<img id="banner" class="col-xs-6"src="img/logo.jpg">
+			<div id="banner-der" class="col-xs-3"></div>
+		</div>
+		<div id="centro" class="row">
+			<div id="columna-izq" class="col-xs-3">
+				<div id="menu-lateral" class="panel panel-default">
+					<button type="button" class="btn-lat btn btn-default btn-lg" onclick="menuLat1()">Coffe Breaks</button>
+					<p></p>
+					<button type="button" class="btn-lat btn btn-default btn-lg" onclick="menuLat2()">Catering</button>
+					<p></p>
+					<button type="button" class="btn-lat btn btn-default btn-lg" onclick="menuLat3()">Cumpleaños</button>
+					<p></p>
+					<button type="button" class="btn-lat btn btn-default btn-lg" onclick="menuLat4()">Cenas</button>
+					<p></p>
+					<button type="button" class="btn-lat btn btn-default btn-lg" onclick="menuLat5()">Matrimonios</button>
+				</div>
+			</div>
+			<div id="cuerpo" class="col-xs-6">
+				<div id ="menu" class="btn-group btn-group-justified btn-group-lg">
+					<div class="btn-group">
+						<button type="button" class="btn btn-default">Nuestros Productos</button>
+					</div>
+					<div class="btn-group">
+						<button type="button" class="btn btn-default">Cotiza con Nosotros</button>
+					</div>
+					<div class="btn-group">
+						<button type="button" class="btn btn-default">Contáctenos</button>
+					</div>
+				</div>
+				<p></p>
+				<div id ="contenido" class="panel panel-default">
+					<div id="coffe-break" class="row">
+						<h2>Coffe-Breaks</h2>
+						<div class="row">
+							<img src="img/coffe.jpg" class="col-xs-12 imgPag">
+						</div>
+						<p></p>
+						<div class="panel panel-default info1">
+							<br><br><br><br><br><br>
+						</div>
+					</div>
+					<div id="catering" class="row">
+						<h2>Catering</h2>
+						<div class="row">
+							<img src="img/cater.jpg" class="col-xs-12 imgPag">
+						</div>
+						<p></p>
+						<div class="panel panel-default info1">
+							<br><br><br><br><br><br>
+						</div>
+					</div>
+					<div id="cumpleano" class="row">
+						<h2>Cumpleaños</h2>
+						<div class="row">
+							<img src="img/cumplecenas.gif" class="col-xs-12 imgPag">
+						</div>
+						<p></p>
+						<div class="panel panel-default info1">
+							<br><br><br><br><br><br>
+						</div>
+					</div>
+					<div id="cena" class="row">
+						<h2>Cenas</h2>
+						<div class="row">
+							<img src="img/cumplecenas.gif" class="col-xs-12 imgPag">
+						</div>
+						<p></p>
+						<div class="panel panel-default info1">
+							<br><br><br><br><br><br>
+						</div>
+					</div>
+					<div id="matrimonio" class="row">
+						<h2>Matrimonios</h2>
+						<div class="row">
+							<img src="img/matricidio.gif" class="col-xs-12 imgPag">
+						</div>
+						<p></p>
+						<div class="panel panel-default info1">
+							<br><br><br><br><br><br>
+						</div>
+					</div>					
+				</div>
+			</div>
+			<div id="columna-der" class="col-xs-3">
+				
+			</div>
+		</div>
+		<div id="footer" class="row"></div>
+
+		<!--JQuery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    	<!-- Include all compiled plugins (below), or include individual files as needed -->
+    	<script src="js/bootstrap.min.js"></script>
+    	<script type="text/javascript">
+    		document.getElementById('coffe-break').style.display='block';
+			document.getElementById('catering').style.display='none';
+			document.getElementById('cumpleano').style.display='none';
+			document.getElementById('cena').style.display='none';
+			document.getElementById('matrimonio').style.display='none';
+
+    		function menuLat1(){
+    			document.getElementById('coffe-break').style.display='block';
+    			document.getElementById('catering').style.display='none';
+    			document.getElementById('cumpleano').style.display='none';
+    			document.getElementById('cena').style.display='none';
+    			document.getElementById('matrimonio').style.display='none';
+    		}
+    		function menuLat2(){
+    			document.getElementById('coffe-break').style.display='none';
+    			document.getElementById('catering').style.display='block';
+    			document.getElementById('cumpleano').style.display='none';
+    			document.getElementById('cena').style.display='none';
+    			document.getElementById('matrimonio').style.display='none';
+    		}
+    		function menuLat3(){
+    			document.getElementById('coffe-break').style.display='none';
+    			document.getElementById('catering').style.display='none';
+    			document.getElementById('cumpleano').style.display='block';
+    			document.getElementById('cena').style.display='none';
+    			document.getElementById('matrimonio').style.display='none';
+    		}
+    		function menuLat4(){
+    			document.getElementById('coffe-break').style.display='none';
+    			document.getElementById('catering').style.display='none';
+    			document.getElementById('cumpleano').style.display='none';
+    			document.getElementById('cena').style.display='block';
+    			document.getElementById('matrimonio').style.display='none';
+    		}
+    		function menuLat5(){
+    			document.getElementById('coffe-break').style.display='none';
+    			document.getElementById('catering').style.display='none';
+    			document.getElementById('cumpleano').style.display='none';
+    			document.getElementById('cena').style.display='none';
+    			document.getElementById('matrimonio').style.display='block';
+    		}
+    	</script>
+
+	</body>
 </html>

@@ -1,0 +1,29 @@
+
+#menu-lateral{
+	padding-left: 10%;
+	padding-top: 34px;
+	padding-bottom: 34px;
+	padding-right: 10%;
+	padding-bottom: 69.5%;			}
+
+.btn-lat{
+	width: 100%;
+}
+
+#contenido{
+	padding-left: 7%;
+	padding-right: 7%;
+	padding-top: 0px;
+	padding-bottom: 34px;
+}
+
+.imgPag{
+	width: 100%;
+
+}
+
+.info1{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
